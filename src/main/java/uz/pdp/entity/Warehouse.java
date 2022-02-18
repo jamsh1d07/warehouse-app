@@ -20,7 +20,6 @@ public class Warehouse {
     private String name;
 
     @Column(nullable = false)
-    private Boolean active;
-
+    private Boolean active=true;
 
 }

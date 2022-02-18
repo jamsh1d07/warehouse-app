@@ -20,6 +20,6 @@ public class Currency {
     private String name;
 
     @Column(nullable = false)
-    private Boolean active;
+    private Boolean active=true;
 
 }

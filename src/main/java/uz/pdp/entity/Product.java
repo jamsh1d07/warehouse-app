@@ -25,7 +25,7 @@ public class Product {
     private UUID code = UUID.randomUUID();
 
     @Column(nullable = false)
-    private Boolean active;
+    private Boolean active=true;
 
     @ManyToOne
     private Category category;

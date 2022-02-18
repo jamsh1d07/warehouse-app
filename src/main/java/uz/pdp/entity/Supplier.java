@@ -22,6 +22,6 @@ public class Supplier {
     private String phoneNumber;
 
     @Column(nullable = false)
-    private Boolean active;
+    private Boolean active=true;
 
 }

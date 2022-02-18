@@ -16,4 +16,16 @@ public class UserDTO {
     private String lastName;
     private String phoneNumber;
     private String password;
+    private List<Integer> warehouseIds;
+
+    public UserDTO(String phoneNumber, String password) {
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+    }
+
+    public UserDTO(String phoneNumber, String password, List<Integer> warehouseIds) {
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.warehouseIds = warehouseIds;
+    }
 }
