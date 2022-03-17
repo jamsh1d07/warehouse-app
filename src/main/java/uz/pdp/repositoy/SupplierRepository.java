@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import uz.pdp.entity.Supplier;
 
 @Repository
-public interface SupplierRepository extends JpaRepository<Supplier,Integer> {
-
+public interface SupplierRepository extends JpaRepository<Supplier, Integer> {
+    boolean existsByPhoneNumber(String phone);
 }

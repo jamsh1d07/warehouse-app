@@ -22,4 +22,6 @@ public class Currency {
     @Column(nullable = false)
     private Boolean active=true;
 
+
+
 }

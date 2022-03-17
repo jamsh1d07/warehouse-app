@@ -7,4 +7,5 @@ import uz.pdp.entity.Warehouse;
 @Repository
 public interface WarehouseRepository extends JpaRepository<Warehouse,Integer> {
 
+    boolean existsByName(String name);
 }

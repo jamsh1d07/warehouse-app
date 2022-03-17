@@ -1,4 +1,4 @@
-package uz.pdp.entity.attachment;
+package uz.pdp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,14 +16,10 @@ public class AttachmentContent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
-    private byte[] bytes;
+    private byte[] asosiyContent;//asosiy content
 
-    @Column(nullable = false)
-    private Integer attachmentId;
-
-    @Column(nullable = false)
-    private Boolean active;
+    @OneToOne
+    private Attachment attachment;
 
 
 }
