@@ -22,7 +22,5 @@ public class Measurement {
     @Column(nullable = false)
     private Boolean active=true;
 
-    @ManyToOne
-    private Product product;
 
 }

@@ -12,12 +12,12 @@ import uz.pdp.service.CurrencyService;
 @RestController
 @RequestMapping("/api/currency")
 public class CurrencyController {
-    @Autowired
-    CurrencyService currencyService;
-
-    @GetMapping
-    public HttpEntity<?> getAll(){
-        ApiResponse response = currencyService.getAll();
-        return ResponseEntity.ok(response);
-    }
+//    @Autowired
+//    CurrencyService currencyService;
+//
+//    @GetMapping
+//    public HttpEntity<?> getAll(){
+//        ApiResponse response = currencyService.getAll();
+//        return ResponseEntity.ok(response);
+//    }
 }
